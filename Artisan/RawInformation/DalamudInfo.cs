@@ -63,8 +63,8 @@ namespace Artisan.RawInformation
                         if (type is not null && !string.IsNullOrEmpty(type) && type != "release")
                         {
                             StagingChecked = true;
-                            IsStaging = true;
-                            return true;
+                            IsStaging = false;
+                            return false;
                         }
                         else
                         {
